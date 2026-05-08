@@ -1,0 +1,9 @@
+<?php 
+namespace UserSystem;
+
+$conn = mysqli_connect("localhost", "root", "", "user_system");
+
+if (!$conn) {
+  
+    die("Connection failed: " . mysqli_connect_error());
+}
