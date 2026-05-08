@@ -27,17 +27,22 @@ if (!$conn) {
     die("Database connection failed.");
 }
 ?>
+
+
 payment-config.php
 <?php
 $payment_gateway = "SSLCommerz";
 $merchant_id = "MERCHANT_12345";
 ?>
+
+
 order-functions.php
 <?php
 function createOrder($product, $amount) {
     return "Order created for $product. Total amount: $amount";
 }
 ?>
+
 checkout.php
 <?php
 require 'database.php';
@@ -48,6 +53,8 @@ echo createOrder("Laptop", 75000);
 
 echo "<br>Payment Gateway: " . $payment_gateway;
 ?>
+
+
 Output
 Order created for Laptop. Total amount: 75000
 Payment Gateway: SSLCommerz
