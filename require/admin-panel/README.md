@@ -12,13 +12,44 @@ auth.php না থাকলে security system কাজ করবে না।
 
 তাই এখানে অবশ্যই require() ব্যবহার করা উচিত।
 
-Project Structure
 admin-panel/
 │
 ├── dashboard.php
 ├── auth.php
 ├── config.php
-└── admin-functions.php
+├── admin-functions.php
+└── login.php
+
+login.php file তৈরি করুন
+
+admin-panel folder-এর ভিতরে login.php নামে নতুন file তৈরি করে এই code দিন:
+
+<?php
+session_start();
+
+if (isset($_POST['login'])) {
+    $_SESSION['admin_logged_in'] = true;
+    header("Location: dashboard.php");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+</head>
+<body>
+
+<h2>Admin Login</h2>
+
+<form method="POST">
+    <button type="submit" name="login">Login as Admin</button>
+</form>
+
+</body>
+</html>
+
 auth.php
 <?php
 session_start();
@@ -28,11 +59,14 @@ if (!isset($_SESSION['admin_logged_in'])) {
     exit();
 }
 ?>
+
 config.php
 <?php
 $site_name = "My Admin Panel";
 ?>
+
 admin-functions.php
+
 <?php
 function showAdminWelcomeMessage($name) {
     return "Welcome back, " . $name;
@@ -47,6 +81,8 @@ require 'admin-functions.php';
 echo "<h1>" . $site_name . "</h1>";
 echo showAdminWelcomeMessage("Admin");
 ?>
+
+
 Output
 My Admin Panel
 Welcome back, Admin
