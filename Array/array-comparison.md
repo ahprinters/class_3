@@ -1,6 +1,9 @@
-এখানে মূল বিষয় হলো PHP array-এর identical operator === এবং array key conversion।
+এখানে মূল বিষয় হলো PHP array-এর identical operator === এবং 
+array key conversion।
 
-PHP documentation অনুযায়ী, array-এর ক্ষেত্রে === তখনই true হয় যখন দুই array-এর same key/value pairs, same order, এবং same types থাকে।
+PHP documentation অনুযায়ী, array-এর ক্ষেত্রে === তখনই true হয় 
+যখন দুই array-এর same key/value pairs, same order, 
+এবং same types থাকে।
 
 আপনার কোড:
 
@@ -70,7 +73,10 @@ var_dump($a === $b);
 
 তাহলে === false হওয়া উচিত।
 
-কিন্তু PHP-তে array key হিসেবে numeric string দিলে, যেমন "0", "1", এগুলো automatic integer key হয়ে যায়। PHP manual-এ বলা আছে valid decimal integer ধরনের string key integer হিসেবে cast হয়।
+কিন্তু PHP-তে array key হিসেবে numeric string দিলে,
+ যেমন "0", "1", এগুলো automatic integer key হয়ে যায়।
+ PHP manual-এ বলা আছে valid decimal integer 
+ ধরনের string key integer হিসেবে cast হয়।
 
 তাই এই array:
 
@@ -113,7 +119,8 @@ bool(true)
 ২. value একই কি না
 ৩. order একই কি না
 
-আর numeric string key যেমন "0", "1" PHP-তে automatic integer key হয়ে যায়।
+আর numeric string key যেমন "0", "1" 
+PHP-তে automatic integer key হয়ে যায়।
 
 তাই:
 
