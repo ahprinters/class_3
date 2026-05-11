@@ -1,0 +1,47 @@
+login.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/login.php
+
+index.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/index.php
+
+dashboard.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/dashboard.php
+
+logout.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/logout.php
+
+config/config.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/config/config.php
+
+config/database.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/config/database.php
+
+config/app.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/config/app.php
+
+includes/head.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/includes/head.php
+
+includes/header.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/includes/header.php
+
+includes/footer.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/includes/footer.php
+
+includes/mobile-menu.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/includes/mobile-menu.php
+
+includes/signin-modal.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/includes/signin-modal.php
+
+includes/scripts.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/includes/scripts.php
+
+includes/alerts.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/includes/alerts.php
+
+actions/register.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/actions/register.php
+
+actions/login.php: OK
+No syntax errors detected in /mnt/data/molla_clean_php_project/actions/login.php
